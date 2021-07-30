@@ -1,0 +1,98 @@
+/**
+ * @name         CustomDefaultDiscord
+ * @description  Custom Discord Theme
+ * @author       Hayven
+ * @version      1.0
+ */
+
+ /* Imports */
+@import url("https://v-briese.github.io/channel-icons/channelicons.theme.css");
+@import "https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css";
+@import "https://fonts.googleapis.com/css?family=Satisfy|Montserrat:300";
+@import "https://monstrousdev.github.io/themes/addons/user-tags.css";
+@import "https://www.themonster.xyz/styles/google-fonts.css";
+
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
+@import url("https://nfld99.github.io/Better-Discord/Source_Code/Addons/Use_Fonts/DiscordFont.css");
+
+
+ /* root */
+:root {
+    --HSL-server-icon-size: 40px;  /* Size of the server icons | DEFAULT: 40px */
+    --HSL-server-spacing: 10px;  /* Spacing between each server icon | DEFAULT: 10px */
+  }
+  
+
+ /* CSS Code */
+#app-mount .guilds-1SWlCJ .scrollerBase-289Jih {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.usernameContainer-1fp4nu,
+.subtext-3CDbHg,
+.customStatus-3tC2ig,
+.hovered-d5PMVU,
+.title-eS5yk3,
+.wordmark-2iDDfm:after {
+      background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
+      animation: gradient-border 4s linear infinite;
+      background-size: 400% 100%;
+      color: transparent !important;
+      -webkit-background-clip: text;
+      position: relative;
+      z-index: 1;
+}
+@keyframes gradient-border {
+  from {
+    background-position: 0 0;
+}
+  to {
+    background-position: 130% 0;
+}
+}
+.usernameContainer-1fp4nu,
+.subtext-3CDbHg,
+.customStatus-3tC2ig,
+.hovered-d5PMVU,
+.title-eS5yk3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.children-19S4PO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-1r6BKw {
+  height: 40px;
+  z-index: 1;
+}
+#app-mount .guilds-1SWlCJ [class*=pill] span[style*="height: 40"] {
+  display: none;
+}
+.childWrapper-anI2G9, .wrapper-1BJsBx, .tutorialContainer-2sGCg9 {
+  width: 48px;
+  height: 48px;
+}
+#app-mount .friendsOnline-2JkivW {
+  left: calc(-20%);
+}
+.typeWindows-1za-n7 {position:relative}
+.wordmark-2iDDfm {
+  display:flex;
+  align-items:center;
+  padding:0 6px;
+  height:calc(100% + 5px);
+  top:-4px;
+  width:fit-content;
+  font-size:14px;
+  font-weight:600;
+  font-family: 'Discord';
+}
+.wordmark-2iDDfm > svg {display:none}
+.wordmark-2iDDfm:after {content:'Hayven´s Discord'}
+.tutorialContainer-30WoTp+div {display:none}
